@@ -8,7 +8,7 @@
     <title>Document</title>
     <style>
       * {
-        outline: 1px solid red;
+        /* outline: 1px solid red; */
       }
     </style>
     <script
@@ -71,7 +71,9 @@
 
       <!-- 1.topTitle -->
       <div class="topTitle">
-        <h2>입화산 참살이 숲 야영장</h2>
+        <h2>
+          <input type="text" name="topTilte" placeholder="캠핑장명을 입력하세요" />
+        </h2>
       </div>
 
       <!-- 2.mnFace -->
@@ -82,36 +84,37 @@
         <section class="mnFace-r">
           <table>
             <tr>
-              <td class="title">주소</td>
-              <td class="content">울산광역시 중구 다운동 8번지</td>
+              <td>주소</td>
+              <td><input type="text" size="30" placeholder="주소를 입력하세요"></td>
             </tr>
             <tr>
-              <td class="title">문의처</td>
-              <td>052-1234-5678</td>
+              <td>문의처</td>
+              <td><input type="text" size="30" placeholder="전화번호를 입력하세요"></td>
             </tr>
             <tr>
-              <td class="title">캠핑장 유형</td>
-              <td class="content">자동차 야영장</td>
+              <td>캠핑장 유형</td>
+              <td><input type="text" size="30" placeholder="캠핑장 유형을 입력하세요"></td>
             </tr>
             <tr>
-              <td class="title">운영기간</td>
-              <td class="content">봄, 여름, 가을, 겨울</td>
+              <td>운영기간</td>
+              <td><input type="text" size="30" placeholder="운영기간을 입력하세요"></td>
             </tr>
             <tr>
-              <td class="title">운영일</td>
-              <td class="content">평일+주말</td>
+              <td>운영일</td>
+              <td><input type="text" size="30" placeholder="운영일을 입력하세요"></td>
             </tr>
             <tr>
-              <td class="title">홈페이지</td>
-              <td class="content"><a href="#">홈페이지</a></td>
+              <td>홈페이지</td>
+              <td><input type="text" size="30" placeholder="홈페이지 주소를 입력하세요"></td>
             </tr>
             <tr>
-              <td class="title">주변이용<br />가능시설</td>
-              <td class="content">산책로, 수영장, 농어촌체험시설</td>
+              <td>주변이용<br />가능시설</td>
+              <td><input type="text" size="30" placeholder="주변이용가능시설을 입력하세요"></input></td>
             </tr>
           </table>
-          <div class="reserv">
-            <button type="button" class="reservBtn">예약</button>
+          <div class="adminBtns">
+            <button type="button" class="adminBtn updateBtn">수정</button>
+            <button type="button" class="adminBtn cancelBtn">취소</button>
           </div>
         </section>
       </div>
@@ -127,6 +130,7 @@
         <div class="tab1_content tc">
           <!-- tab1 내용 시작 -->
           <div class="menuBtn-wrapper-tab1">
+            <hr />
             <!-- 3.1-1.intro -->
             <div class="intro">
               <h3>
@@ -135,25 +139,8 @@
                 <hr />
               </h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod et
-                libero veritatis voluptatem ab facere, porro labore officia eos
-                atque officiis sunt obcaecati eius delectus architecto cumque
-                laborum, eveniet a. Quia neque, pariatur maxime perspiciatis ut
-                quasi, illo, tempora quos minima iste atque qui! Quas distinctio
-                impedit voluptatem, unde recusandae aspernatur facere minima
-                dolorem, ipsum consequuntur nemo dolore quia reiciendis.
-                Accusamus voluptate consequuntur, illum eos ullam asperiores
-                eaque itaque, maiores labore quibusdam velit recusandae tempora
-                assumenda cum vero aperiam autem voluptatibus enim error. Odio
-                quasi doloribus praesentium, nobis eaque sint. Ullam ea iusto
-                numquam iure quos dolorum incidunt sequi architecto, itaque
-                cupiditate, enim veritatis distinctio reprehenderit fuga
-                voluptas a, autem officiis labore blanditiis quis earum sit?
-                Ipsam aliquam necessitatibus laudantium. Quos assumenda minus
-                totam iusto quod fugiat. Qui, aspernatur sapiente! Ex corrupti,
-                necessitatibus minus, corporis quas saepe nostrum error ratione
-                porro dignissimos nulla deleniti cum accusantium dolore, omnis
-                eos velit.
+                <!-- cols="87" rows="10"  -->
+                <textarea name="topTitle" id="" placeholder="캠핑장 소개를 입력하세요"></textarea>
               </p>
             </div>
 
@@ -166,48 +153,56 @@
               </h3>
               <section class="img">
                 <div class="item item1">
-                  <img
-                    src="http://placeimg.com/640/480/nature"
-                    alt="inform img"
-                  />
-                  <a href="#">
-                    <p>이미지 제목1</p>
-                  </a>
+                  <label for="profile">이미지 추가
+                    <input type="file"
+                           id="profile"
+                           accept="image/png, image/jpeg">
+                  </label>
+                  <!-- <a href="#">
+                    <img
+                      src="http://placeimg.com/640/480/nature"
+                      alt="inform img"
+                    />
+                  </a> --> 
                 </div>
                 <div class="item item2">
-                  <img
-                    src="http://placeimg.com/640/480/nature"
-                    alt="inform img"
-                  />
                   <a href="#">
-                    <p>이미지 제목2</p>
+                    <img
+                      src="http://placeimg.com/640/480/nature"
+                      alt="inform img"
+                    />
                   </a>
                 </div>
                 <div class="item item3">
-                  <img
-                    src="http://placeimg.com/640/480/nature"
-                    alt="inform img"
-                  />
                   <a href="#">
-                    <p>이미지 제목3</p>
+                    <img
+                      src="http://placeimg.com/640/480/nature"
+                      alt="inform img"
+                    />
                   </a>
                 </div>
                 <div class="item item4">
-                  <img
-                    src="http://placeimg.com/640/480/nature"
-                    alt="inform img"
-                  />
                   <a href="#">
-                    <p>이미지 제목4</p>
+                    <img
+                      src="http://placeimg.com/640/480/nature"
+                      alt="inform img"
+                    />
                   </a>
                 </div>
                 <div class="item item5">
-                  <img
-                    src="http://placeimg.com/640/480/nature"
-                    alt="inform img"
-                  />
                   <a href="#">
-                    <p>이미지 제목5</p>
+                    <img
+                      src="http://placeimg.com/640/480/nature"
+                      alt="inform img"
+                    />
+                  </a>
+                </div>
+                <div class="item item6">
+                  <a href="#">
+                    <img
+                      src="http://placeimg.com/640/480/nature"
+                      alt="inform img"
+                    />
                   </a>
                 </div>
               </section>
@@ -222,21 +217,27 @@
               </h3>
               <section class="img">
                 <div class="item item1">
-                  <img
-                    src="http://placeimg.com/640/480/nature"
-                    alt="campImg img"
-                  />
                   <a href="#">
-                    <p>이미지 제목1</p>
+                    <img
+                      src="http://placeimg.com/640/480/nature"
+                      alt="campImg img"
+                    />
                   </a>
                 </div>
                 <div class="item item2">
-                  <img
-                    src="http://placeimg.com/640/480/nature"
-                    alt="campImg img"
-                  />
                   <a href="#">
-                    <p>이미지 제목2</p>
+                    <img
+                      src="http://placeimg.com/640/480/nature"
+                      alt="campImg img"
+                    />
+                  </a>
+                </div>
+                <div class="item item3">
+                  <a href="#">
+                    <img
+                      src="http://placeimg.com/640/480/nature"
+                      alt="campImg img"
+                    />
                   </a>
                 </div>
               </section>
@@ -271,19 +272,33 @@
                     <td>주말</td>
                   </tr>
                   <tr>
+                    <td>일반</td>
+                    <td><input type="text" placeholder="요금을 입력하세요"></td>
+                    <td><input type="text" placeholder="요금을 입력하세요"></td>
+                    <td><input type="text" placeholder="요금을 입력하세요"></td>
+                    <td><input type="text" placeholder="요금을 입력하세요"></td>
+                  </tr>
+                  <tr>
+                    <td>카라반</td>
+                    <td><input type="text" placeholder="요금을 입력하세요"></td>
+                    <td><input type="text" placeholder="요금을 입력하세요"></td>
+                    <td><input type="text" placeholder="요금을 입력하세요"></td>
+                    <td><input type="text" placeholder="요금을 입력하세요"></td>
+                  </tr>
+                  <!-- <tr>
                     <td class="gubun">일반</td>
-                    <td>45,000~85,000</td>
-                    <td>55,000~95,000</td>
-                    <td>50,000~90,000</td>
-                    <td>60,000~100,000</td>
+                    <td class="content-text">45,000~85,000</td>
+                    <td class="content-text">55,000~95,000</td>
+                    <td class="content-text">50,000~90,000</td>
+                    <td class="content-text">60,000~100,000</td>
                   </tr>
                   <tr>
                     <td class="gubun">카라반</td>
-                    <td>80,000</td>
-                    <td>90,000</td>
-                    <td>0</td>
-                    <td>0</td>
-                  </tr>
+                    <td class="content-text">80,000</td>
+                    <td class="content-text">90,000</td>
+                    <td class="content-text">0</td>
+                    <td class="content-text">0</td>
+                  </tr> -->
                 </table>
               </section>
             </div>
@@ -295,14 +310,11 @@
                 <hr />
               </h3>
               <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Quaerat quas ducimus alias aperiam a nemo laborum est fugiat,
-                optio error quidem nostrum molestiae numquam quasi cum unde
-                ipsum enim. Minus. Soluta maiores quod dolorum cumque qui
-                commodi praesentium inventore sint, consequuntur aperiam laborum
-                sapiente, ipsa nobis totam dolore ullam deserunt animi quia!
-                Voluptatem voluptates tempora ex molestiae, provident illo
-                similique.
+                <!-- cols="87" rows="10"  -->
+                <textarea name="caution-guide__content"
+                          id="caution-guide__content"
+                          placeholder="안내사항을 입력하세요">
+                </textarea>
               </p>
             </div>
             <!-- 3.2-3.안전시설 및 배치도 -->
